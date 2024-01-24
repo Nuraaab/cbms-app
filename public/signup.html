@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Registartion and login page</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="togle-btn" onclick="login() ">LOG IN</button>
+                <button type="button" class="togle-btn" onclick="register()">REGISTERATION</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="username" required>
+                <input type="text" class="input-field" placeholder="pasword" required>
+                <input type="checkbox" class="check-box"><span class="remember">remember password</span>
+                <button type="submit" class="submit-btn">LOG IN</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="username" required>
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input type="text" class="input-field" placeholder="pasword" required>
+                <button type="submit" class="submit-btn">REGISTER</button>
+            </form>
+            <label for="role">Role:</label>
+    <select id="role" name="role" required>
+      <option value="contractor">Contractor</option>
+      <option value="projectOwner">Project Owner</option>
+    </select><br><br>
+        </div>
+    </div>
+
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="430px";
+            z.style.left="0";
+        }
+
+
+    </script>
+    </body>
+</html>
